@@ -2,7 +2,6 @@
 
 rm -rf _site
 
-# if you're using Github Pages as andimiya.github.io, replace 'gh-pages' below with 'master'
 git clone -b master `git config remote.origin.url` _site
 bundle exec jekyll build
 cd _site

@@ -1,0 +1,352 @@
+.custom-menu-wrapper {
+    background-color: #5a5a5a;
+    margin-bottom: 0.25em;
+    white-space: nowrap;
+    position: relative;
+}
+
+.custom-menu {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+.custom-menu .pure-menu-link,
+.custom-menu .pure-menu-heading {
+    color: white;
+}
+
+.custom-menu .pure-menu-link:hover,
+.custom-menu .pure-menu-heading:hover {
+    background-color: transparent;
+}
+
+.custom-menu-top {
+    position: relative;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.pure-menu-horizontal.pure-menu-scrollable {
+    padding: 0em;
+    padding-top: 0em;
+    padding-right: 0px;
+    padding-bottom: 0em;
+    padding-left: 0px;
+}
+
+.custom-menu-logo {
+  position: relative;
+  left: 0.5em;
+  height: 50px;
+  width: 50px;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+}
+
+.custom-menu-brand {
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+
+.custom-menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    display: none;
+}
+
+.custom-menu-toggle .bar {
+    background-color: white;
+    display: block;
+    width: 22px;
+    height: 4px;
+    border-radius: 100px;
+    position: absolute;
+    top: 27px;
+    right: 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-menu-toggle .bar:first-child {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.custom-menu-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-menu-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.custom-menu-screen {
+    background-color: #5a5a5a;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    height: 3em;
+    width: 70em;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.custom-menu-tucked .custom-menu-screen {
+    -webkit-transform: translateY(-44px);
+    -moz-transform: translateY(-44px);
+    -ms-transform: translateY(-44px);
+    transform: translateY(-44px);
+}
+@media (min-width: 62em) {
+  .custom-menu-brand{
+    display: none;
+  }
+}
+
+@media (max-width: 10em) {
+  .custom-menu-brand{
+    display: none;
+  }
+}
+
+@media (max-width: 62em) {
+
+    .custom-menu {
+        display: block;
+    }
+
+    .custom-menu-toggle {
+        display: block;
+        display: none\9;
+    }
+
+    .custom-menu-bottom {
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid #eee;
+        background-color: #808080\9;
+        z-index: 100;
+    }
+
+    .custom-menu-bottom .pure-menu-link {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .custom-menu-bottom.custom-menu-tucked .pure-menu-link {
+        -webkit-transform: translateX(-140px);
+        -moz-transform: translateX(-140px);
+        -ms-transform: translateX(-140px);
+        transform: translateX(-140px);
+        opacity: 0;
+        opacity: 1\9;
+    }
+
+    .pure-menu-horizontal.custom-menu-tucked {
+        z-index: -1;
+        top: 45px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+}
+
+
+.iconbar {
+
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: #5a5a5a;
+
+}
+
+.iconbar__container {
+  display: inline-block;
+  position: relative;
+}
+
+.iconbar__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  width: 28px;
+  padding: 5px;
+}
+
+.img-inside-post{
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #5a5a5a;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.row {
+  text-align: left;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+.contact-me {
+
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+.thank-textbox {
+  width: 100%;
+}
+
+.thank-text {
+  font-size: 20 px;
+  font-family: Play, monospace,"Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.thank-button {
+  margin-top:  10px;
+  font-size: 20 px;
+  font-family: Play, monospace,"Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, Helvetica, Arial, sans-serif;
+}
+.card {
+
+  text-align: center;
+  margin-top:  10px;
+
+  border: 1px solid #5a5a5a;
+  margin-bottom: 30px;
+}
+
+.card h1{
+  margin: 1px;
+}
+.education{
+    text-align: center;
+    margin: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.2;
+
+}
+
+
+.experience {
+  text-align: center;
+  margin: 0.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+}
+
+
+.education h1,h2,h3,h4{
+  margin: 0em;
+}
+
+.education-logo {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.line-breaker {
+  margin-left: 20%;
+  margin-right: 20%;
+  border-top: 1px solid #5a5a5a;
+  text-align: center;
+}
+
+.line-breaker2 {
+
+  border-top: 1px solid #5a5a5a;
+  text-align: center;
+
+}
+
+.photo-navi-btn {
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/**
+ .l-box {
+   padding: 1px;
+ }
+ */
+.detail a {
+  color: black;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+
+.photo-index-title {
+  border: solid 1px #5a5a5a;
+  padding: auto;
+  text-align: center;
+}

@@ -1,1 +1,22 @@
-Hello World
+---
+title: Welcome
+layout: default
+---
+{% for post in site.posts %}
+{% if post.layout != "album" %}
+<div class="list">
+    <div class="post-index">
+        <div class="post-image">
+            <a href="{{post.url}}">
+                <i class="fa fa-{{post.icon}} fa-fw"></i>
+            </a>
+        </div>
+        <div class="post-content">
+            <p class="post-index-title"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></p>
+            <p class="post-detail">{{ post.date | date: '%B %d, %Y' }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
